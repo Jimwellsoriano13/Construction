@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+  
+  <!-- This link is for bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- This link is for bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- This lis is for swiper -->
+   <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+
+  <!-- This link is for fontawesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+  <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+<body>
+
+  <!-- Header section -->
+  <header class="navbar navbar-expand-lg py-3 fixed-top header">
+    <div class="container">
+      <a href="#" class="navbar-brand fw-bolder logo" style="font-size: 2rem;">UpConstruction<span><i class="bi bi-circle-fill text-warning" style="font-size: .3rem; margin-left: .2rem;"></i></span></a>
+
+      <button class="navbar-toggler bg-light border-0 outlined-0" type="button" data-bs-toggle="modal" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto left-side-menu">
+          <li class="navbar-item px-2 py-2">
+            <a href="index.html" class="nav-link fw-semibold" style="font-size: .9rem;">Home</a>
+          </li>
+          <li class="navbar-item px-2 py-2">
+            <a href="about.html" class="nav-link fw-semibold" style="font-size: .9rem;">About</a>
+          </li>
+          <li class="navbar-item px-2 py-2">
+            <a href="service.html" class="nav-link fw-semibold" style="font-size: .9rem;">Services</a>
+          </li>
+          <li class="navbar-item px-2 py-2">
+            <a href="project.html" class="nav-link fw-semibold" style="font-size: .9rem;">Projects</a>
+          </li>
+          <li class="navbar-item px-2 py-2">
+            <a href="blog.html" class="nav-link fw-semibold" style="font-size: .9rem;">Blog</a>
+          </li>
+          <li class="navbar-item px-2 py-2 dropdown position-relative">
+            <a href="#blog" style="font-size: .9rem;" class="nav-link fw-semibold" data-mdb-button-init
+            data-mdb-ripple-init data-mdb-dropdown-init class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false">Dropdown <i class="fa-solid fa-caret-down ms-2"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 1</a></li>
+              <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 2</a></li>
+              <li class="dropdown position-relative ps-2">
+                <a href="#blog" class="nav-link position-relative" data-mdb-button-init
+                data-mdb-ripple-init data-mdb-dropdown-init class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false" style="font-size: .9rem;">Dropdown 3 <i class="fa-solid fa-caret-right" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);"></i></a>
+                <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 1</a></li>
+                  <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 2</a></li>
+                  <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 3</a></li>
+                  <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 4</a></li>
+                </ul>
+              <li><a class="dropdown-item mb-1" href="#" style="font-size: .9rem;">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="navbar-item px-2 py-2">
+            <a href="contact.html" class="nav-link fw-semibold" style="font-size: .9rem;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End of Header Section -->
+
+  <!-- Header Modal Section -->
+  <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="navmenu">
+    <div class="modal-dialog w-95" style="max-width: 95%; height: 100vh;">
+        <div class="modal-content h-100">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <div class="modal-body">
+                <div class="header-modal list-group list-group-flush text-start">
+                  <div class="list-group-item border-0 mb-1 py-3">
+                    <a href="index.html" class="nav-link fw-semibold">Home</a>
+                  </div>
+                  <div class="list-group-item  border-0 mb-1 py-3">
+                    <a href="about.html" class="nav-link fw-semibold">About</a>
+                  </div>
+                  <div class="list-group-item  border-0 mb-1 py-3">
+                    <a href="service.html" class="nav-link fw-semibold">Services</a>
+                  </div>
+                  <div class="list-group-item  border-0 mb-1 py-3">
+                    <a href="project.html" class="nav-link fw-semibold">Projects</a>
+                  </div>
+                  <div class="list-group-item  border-0 mb-1 py-3">
+                    <a href="blog.html" class="nav-link fw-semibold">Blog</a>
+                  </div> 
+                  <div class="accordion accordion-flush list-group-item border-0" id="accordionFlushExample">
+                    <a class="accordion-item navbar-brand fw-semibold">
+                        <h2 class="accordion-header border-0" id="flush-headingOne">
+                          <button class="accordion-button collapsed nav-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" > Dropdown 
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse outlined-0" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> 
+                          <div class="accordion-body header-accordion"> 
+                            <div class="list-group-item border-0 mb-1 py-3">
+                              <a href="#intro" class="nav-link fw-semibold">Dropdown 1</a>
+                            </div>
+
+                            <div class="list-group-item border-0 mb-1 py-3">
+                              <a href="#intro" class="nav-link fw-semibold">Dropdown 2</a>
+                            </div>
+
+                            <div class="accordion accordion-flush list-group-item border-0" id="accordionFlushExample-2">
+                              <a class="accordion-item navbar-brand fw-semibold">
+                                  <h2 class="accordion-header border-0" id="flush-headingOne-2">
+                                    <button class="accordion-button collapsed nav-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-2" > Dropdown 3
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne-2" class="accordion-collapse collapse outlined-0" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample-2"> 
+                                    <div class="accordion-body header-accordion"> 
+                                      <div class="list-group-item border-0 mb-1 py-3">
+                                        <a href="#intro" class="nav-link fw-semibold">Dropdown 1</a>
+                                      </div>
+          
+                                      <div class="list-group-item border-0 mb-1 py-3">
+                                        <a href="#intro" class="nav-link fw-semibold">Dropdown 2</a>
+                                      </div>
+          
+                                      <div class="list-group-item border-0 mb-1 py-3">
+                                        <a href="#intro" class="nav-link fw-semibold">Dropdown 3</a>
+                                      </div>
+          
+                                      <div class="list-group-item border-0 mb-1 py-3">
+                                        <a href="#intro" class="nav-link fw-semibold">Dropdown 4</a>
+                                      </div>
+                                      
+                                    </div> 
+                                </div>
+                              </a>
+                            </div>
+                            <div class="list-group-item border-0 mb-1 py-3">
+                              <a href="#intro" class="nav-link fw-semibold">Dropdown 4</a>
+                            </div>
+                            
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+                <div class="list-group-item  border-0 mb-1 py-3">
+                  <a href="contact.html" class="nav-link fw-semibold">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- End of Header Modal Section -->
+
+   <!-- Intro services  -->
+  <section class="second-page-header position-relative d-flex align-items-center justify-content-center py-5 px-2">
+    <div class="container">
+        <div class="second-page-title text-light d-flex flex-column align-items-center justify-content-center">
+          <h1 class="display-3 fw-semibold">Blog Details</h1>
+          <ul class="list-unstyled d-flex gap-3">
+            <li class="text-warning fw-semibold fs-5"><a href="index.html" class="navbar-brand">Home</a></li>
+            <li class="fw-semibold fs-5">/</li>
+            <li class="fw-semibold fs-5"><a href="#" class="navbar-brand">Blog Details</a></li>
+          </ul>
+        </div>
+    </div>
+  </section>
+  <!-- End of intro services -->
+
+  <!-- Blog Details -->
+   <section class="py-5 px-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-fluid col-lg-8 mb-5">
+          <div class="blog-details-content shadow-lg mb-5">
+            <img src="asset/img/blog/blog-1.jpg" alt="" class="img-fluid">
+            <div class="p-4">
+               <h2 class="mb-4 fw-bold">
+                Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
+               </h2>
+               <ul class="list-unstyled d-flex gap-3">
+                <li><i class="fa-regular fa-user me-2"></i>John Doe</li>
+                <li><i class="fa-regular fa-clock me-2"></i></i>Jan 1, 2022</li>
+                <li><i class="fa-regular fa-message me-2"></i>12 Comments</li>
+               </ul>
+               <p class="mb-3">
+                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+              </p>
+               <p class="mb-3">Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
+               <blockquote class="blog-text-item">
+               <p>
+                Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+              </p>
+               </blockquote>
+               <p class="mb-4">
+                Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+              </p>
+              <h4 class="mb-3">
+                Et quae iure vel ut odit alias.
+              </h4>
+               <p class="mb-2">
+                Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+              </p>
+               <p class="mb-4">
+                Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+              </p>
+               <img src="asset/img/blog/blog-inside-post.jpg" alt="" class="img-fluid mb-4">
+               <h4 class="mb-3 fw-bold">
+                Ut repellat blanditiis est dolore sunt dolorum quae.
+              </h4>
+               <p class="mb-4">
+                Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+              </p>
+               <p class="mb-4 pb-3" style="border-bottom: 1px solid rgb(224, 224, 224);">
+                Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+              </p>
+               <ul class="list-unstyled d-flex gap-3">
+                <li><i class="fa-regular fa-folder me-2"></i>Business,</li>
+                <li><i class="fa-solid fa-tag me-2"></i></i> Creative,</li>
+                <li></i> Tips,</li>
+                <li></i> Marketing,</li>
+               </ul>
+            </div>
+          </div>
+      
+         <!-- second-content -->
+            <div class="blog-details-second d-flex align-items-center shadow-lg p-4 gap-4 mb-5">
+              <img src="asset/img/blog/blog-author.jpg" alt="" class="rounded-pill" style="height: 130px;">
+              <div>
+                <h4 class="text-secondary fw-bold">Jane Smith</h4>
+                <ul class="list-unstyled d-flex gap-3 mb-3">
+                  <li><i class="fa-brands fa-x-twitter fs-5 text-secondary"></i></li>
+                  <li><i class="fa-brands fa-facebook fs-5 text-secondary"></i></li>
+                  <li><i class="fa-brands fa-instagram fs-5 text-secondary"></i></li>
+                </ul>
+                <p class="fst-italic text-secondary fs-5">
+                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                </p>
+              </div>
+            </div>
+
+
+        <!-- comment section -->
+         <!-- comment 1 -->
+            <h3 class="mb-5" style="color: var(--default-color);;">8 Comments</h3>
+            <div class="comment-content d-flex gap-3 mb-5">
+              <img src="asset/img/blog/comments-1.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Georgia Reader <span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta. Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                 </p>
+              </div>
+            </div>
+         <!-- comment 2 -->
+            <div class="comment-content d-flex gap-3 mb-5">
+              <img src="asset/img/blog/comments-2.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Aron Alvarado  <span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.
+                 </p>
+              </div>
+            </div>
+         <!-- comment 3 --> 
+            <div class="comment-content d-flex gap-3 mb-5 ps-5">
+              <img src="asset/img/blog/comments-3.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Lynda Small<span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae. Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat. Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
+                 </p>
+              </div>
+            </div>
+         <!-- comment 4 -->
+            <div class="comment-content d-flex gap-3 mb-5 ps-5 ms-5">
+              <img src="asset/img/blog/comments-4.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Sianna Ramsay<span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. Perferendis id consectetur necessitatibus.neque.
+                 </p>
+              </div>
+            </div>
+         <!-- comment 5 -->
+            <div class="comment-content d-flex gap-3 mb-5">
+              <img src="asset/img/blog/comments-5.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Nolan Davidson<span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at. Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
+                 </p>
+              </div>
+            </div>
+         <!-- comment 6 -->
+            <div class="comment-content d-flex gap-3 mb-5">
+              <img src="asset/img/blog/comments-6.jpg" alt="" style="height: 70px;">
+              <div class="comment-item">
+                <p class="fw-bold comment-profile-name">Kay Duggan<span><i class="bi bi-reply-fill ms-3"></i> Reply</span></p>
+                 <p class="mb-2">01 Jan,2022</p>
+                 <p>
+                  Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. Cumque sed quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.
+                 </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="blog-details-right p-4 shadow-lg">
+              <h4 class="fw-semibold mb-3 text-secondary">Search</h4>
+              <div class="input-group details-right-btn mb-5 ">
+                <input type="text" class="form-control py-2" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn bg-warning" type="button" id="button-addon2"><i class="bi bi-search text-light"></i></button>
+              </div>
+              <h4 class="fw-semibold mb-4 text-secondary">Categories</h4>
+              <ul class="list-unstyled blog-details-right-ul mb-5">
+                <li class="mb-3">General <span class="text-secondary ">(25)</span></li>
+                <li class="mb-3">Lifestyle <span class="text-secondary ">(12)</span></li>
+                <li class="mb-3">Travel <span class="text-secondary ">(5)</span></li>
+                <li class="mb-3">Design <span class="text-secondary ">(22)</span></li>
+                <li class="mb-3">Creative <span class="text-secondary ">(8)</span></li>
+                <li class="mb-3">Education <span class="text-secondary ">(14)</span></li>
+              </ul>
+              <h4 class="fw-semibold mb-4 text-secondary">Recent Posts</h4>
+              <ul class="list-unstyled recent-post mb-5" style="color: var(--default-color);">
+                <li class="d-flex gap-3 mb-3"><img src="asset/img/blog/blog-recent-1.jpg" alt="" class="w-25">
+                  <div class="d-flex flex-column">
+                    <p class="fw-bold mb-2">Nihil blanditiis at in nihil autem</p>
+                    <small class="text-secondary">Jan 1, 2020</small>
+                  </div>
+                </li>
+
+                <li class="d-flex gap-3 mb-3"><img src="asset/img/blog/blog-recent-2.jpg" alt="" class="w-25">
+                  <div class="d-flex flex-column">
+                    <p class="fw-bold mb-2">Quidem autem et impedit</p>
+                    <small class="text-secondary">Jan 1, 2020</small>
+                  </div>
+                </li>
+
+                <li class="d-flex gap-3 mb-3"><img src="asset/img/blog/blog-recent-3.jpg" alt="" class="w-25">
+                  <div class="d-flex flex-column">
+                    <p class="fw-bold mb-2">Id quia et et ut maxime similique occaecati ut</p>
+                    <small class="text-secondary">Jan 1, 2020</small>
+                  </div>
+                </li>
+
+                <li class="d-flex gap-3 mb-3"><img src="asset/img/blog/blog-recent-4.jpg" alt="" class="w-25">
+                  <div class="d-flex flex-column">
+                    <p class="fw-bold mb-2">Laborum corporis quo dara net para</p>
+                    <small class="text-secondary">Jan 1, 2020</small>
+                  </div>
+                </li>
+
+                <li class="d-flex gap-3 mb-3"><img src="asset/img/blog/blog-recent-5.jpg" alt="" class="w-25">
+                  <div class="d-flex flex-column">
+                    <p class="fw-bold mb-2">Et dolores corrupti quae illo quod dolor</p>
+                    <small class="text-secondary">Jan 1, 2020</small>
+                  </div>
+                </li>
+              </ul>
+              <h4 class="fw-semibold mb-2 text-secondary">Tags</h4>
+              <ul class="list-unstyled tag-button">
+                <li class="btn"><a href="#" class="btn">Apps</a></li>
+                <li class="btn"><a href="#" class="btn">IT</a></li>
+                <li class="btn"><a href="#" class="btn">Business</a></li>
+                <li class="btn"><a href="#" class="btn">Mac</a></li>
+                <li class="btn"><a href="#" class="btn">Design</a></li>
+                <li class="btn"><a href="#" class="btn">Office</a></li>
+                <li class="btn"><a href="#" class="btn">Creative</a></li>
+                <li class="btn"><a href="#" class="btn">Studio</a></li>
+                <li class="btn"><a href="#" class="btn">Smart</a></li>
+                <li class="btn"><a href="#" class="btn">Tips</a></li>
+                <li class="btn"><a href="#" class="btn">Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+   <!-- End of Blog Details -->
+
+  <!-- Footer Section -->
+  <footer class="py-5 px-2 position-relative text-light">
+    <div class="container">
+      <div class="row py-3 mb-4 border-bottom border-secondary gy-3">
+
+        <div class="col-md-6 col-lg-4 z-1">
+          <a href="#" class="navbar-brand fw-bolder logo" style="font-size: 2rem;"><span class="fs-3 d-block mb-4">UpConstruction</span></a>
+          <p style="font-size: .9rem;">A108 Adam Street</p>
+          <p class="mb-4" style="font-size: .9rem;">New York, NY 535022</p>
+          <p class="fw-bold" style="font-size: .9rem;">Phone:<span class="fw-normal ms-1">+1 5589 55488 55</span></p>
+          <p class="fw-bold mb-4" style="font-size: .9rem;">Email:<span class="fw-normal ms-1">info@example.com</span></p>
+
+          <ul class="list-unstyled d-flex gap-3 footer-icon">
+            <li><i class="bi bi-twitter-x"></i></li>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-linkedin"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2 z-1 footer-link-content">
+          <h4 style="font-size: 1rem;" class="mb-3">Useful Links</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">Home</li>
+            <li class="mb-2">About Us</li>
+            <li class="mb-2">Services</li>
+            <li class="mb-2">Terms of service</li>
+            <li class="mb-2">privacy policy</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2 z-1 footer-link-content">
+          <h4 style="font-size: 1rem;" class="mb-3">Our Services</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">Web Design</li>
+            <li class="mb-2">Web Development</li>
+            <li class="mb-2">Services</li>
+            <li class="mb-2">Product Management</li>
+            <li class="mb-2">Marketing</li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-lg-2 z-1 footer-link-content">
+          <h4 style="font-size: 1rem;" class="mb-3">Hic solutasetp</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">Molestiae accusamus iure</li>
+            <li class="mb-2">Excepturi dignissimos</li>
+            <li class="mb-2">Suscipit distinctio</li>
+            <li class="mb-2">Dilecta</li>
+            <li class="mb-2">Sit quas consectetur</li>
+          </ul>
+        </div>
+   
+        <div class="col-md-3 col-lg-2 z-1 footer-link-content">
+          <h4 style="font-size: 1rem;" class="mb-3">Nobis illum</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">Ipsam</li>
+            <li class="mb-2">Laudantium dolorum</li>
+            <li class="mb-2">Dinera</li>
+            <li class="mb-2">Trodelas</li>
+            <li class="mb-2">Flexo</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center fw-normal" style="font-size: 1rem;">© Copyright <span class="fw-bold">UpConstruction</span>  All Rights Reserved</p>
+      <p class="text-center" style="font-size: .9rem;">Designed by<span class="text-warning ms-1">BootstrapMade</span></p>
+    </div>
+  </footer>
+  <!-- End of Foorter Section -->
+  <a href="#" class="btn bg-warning position-fixed" style="bottom: 30px; right: 20px;"><i class="fa-solid fa-arrow-up"></i></a>
+
+    
+    <!-- jquery -->
+    <script src="asset/script/jquery-3.7.1.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- swiper -->
+    <script src="asset/script/swiper-bundle.min.js"></script>
+    <!-- header js -->
+    <script src="asset/script/header.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script type="module" src="asset/script/main.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+    <script>
+      new PureCounter();
+    </script>
+  
+  </body>
+  </html>
